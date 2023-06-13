@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="账 号:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_selector_"
+                android:hint="请输入账号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="@color/teal_200" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="密 码:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_password_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_selector_"
+                android:hint="请输入密码"
+                android:inputType="numberPassword"
+                android:maxLength="10"
+                android:textColorHint="@color/teal_200" />
+        </LinearLayout>
+
+        <CheckBox
+            android:text="记住密码"
+            android:id="@+id/ck_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:backgroundTint="@color/purple_200"
+            android:id="@+id/btn_logged_in"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="登     录"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
